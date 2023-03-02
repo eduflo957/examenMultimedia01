@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieTitleActivity">
+
+    <EditText
+        android:id="@+id/editTitulo"
+        android:layout_width="302dp"
+        android:layout_height="55dp"
+        android:hint="titulo"
+        app:layout_constraintBottom_toTopOf="@+id/editDuracion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editDuracion"
+        android:layout_width="303dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="460dp"
+        android:hint="duracion (numérico en minutos)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btContinuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
